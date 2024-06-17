@@ -10,6 +10,7 @@ public class GradeCalculato {
         switch(score/10){
             case 10:
             case 9:
+
                 return "A";
             case 8:
                 return "B";
