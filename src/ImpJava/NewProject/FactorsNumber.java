@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class FactorsNumber {
     public static void findFactor(int n) {
+        //factor a number
         for(int i=1; i <= n; i++) {
             if(n % i == 0)
                 System.out.print(i+"\t");
