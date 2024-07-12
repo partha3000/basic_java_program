@@ -6,5 +6,7 @@ public class MainMethod {
     }
     public static void main(String []arg){
         myMethod();
+        myMethod();
+        myMethod();
     }
 }
