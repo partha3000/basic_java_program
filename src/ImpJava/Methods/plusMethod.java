@@ -14,6 +14,6 @@ public class plusMethod {
         double myNum2 = plusMethod(4.3, 6.26);
 
         System.out.println("int:" + myNum1);
-        System.out.println("double:" +myNum2);
+        System.out.println("double:" +myNum2);//display the message -
     }
 }
