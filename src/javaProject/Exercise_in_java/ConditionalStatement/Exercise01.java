@@ -10,7 +10,7 @@ package javaProject.Exercise_in_java.ConditionalStatement;
 
 import java.util.Scanner;
 
-public class Exercise1 {
+public class Exercise01 {
     public static void main(String [] args){
         Scanner scanner = new Scanner(System.in);
 
