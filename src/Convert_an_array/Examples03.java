@@ -15,6 +15,15 @@ public class Examples03 {
         System.out.println("HE-JE");
         System.out.println("FE-DD");
         System.out.println("ID ");
+
+        System.out.println("Wel-come");
+        System.out.println("HE-JE");
+        System.out.println("FE-DD");
+        System.out.println("ID ");
+        System.out.println("Wel-come");
+        System.out.println("HE-JE");
+        System.out.println("FE-DD");
+        System.out.println("ID ");
     }
 }
 
