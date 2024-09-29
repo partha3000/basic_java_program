@@ -1,3 +1,9 @@
+/*
+Java Recursive method calculate the number factorial of a number
+date : 28-09-2024
+ */
+
+
 package javaProject.Exercise_in_java.RecursiveMethod;
 
 public class CalculateFactorial {
