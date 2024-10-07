@@ -18,14 +18,5 @@ public class Exercise03 {
     public static double average(double x, double y, double z)
     {
         return (x + y + z) / 3;
-        System.out.println("Hello World");
-        System.out.println("Hello World");
-        System.out.println("Hello World");
-        System.out.println("Hello World");
-        System.out.println("Hello World");
-        System.out.println("Hello World");
-        System.out.println("Hello World");System.out.println("Hello World");
-
-
     }
 }
