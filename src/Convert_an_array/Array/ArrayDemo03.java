@@ -1,6 +1,6 @@
 package Convert_an_array.Array;
 
-public class ArrayDemo3 {
+public class ArrayDemo03 {
         // The main method where the program execution starts.
         public static void main(String[] args) {
             // Declare an integer array 'numbers' and initialize it with values.

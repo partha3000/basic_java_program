@@ -1,6 +1,6 @@
 package Convert_an_array.Array;
 
-public class ArrayDemo {
+public class ArrayDemo01 {
     public static void main(String [] args){
 
         //Declare an array

@@ -2,7 +2,7 @@ package Convert_an_array.Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayDemo4 {
+public class ArrayDemo04 {
     // Import necessary classes from Java libraries.
 
         // The main method for executing the program.
@@ -12,7 +12,7 @@ public class ArrayDemo4 {
             int target = 2;
 
             // Create an instance of Exercise36.
-            ArrayDemo4 r = new ArrayDemo4();
+            ArrayDemo04 r = new ArrayDemo04();
 
             // Call the threeSum method and print the result.
             System.out.println(r.threeSum(input, target));
