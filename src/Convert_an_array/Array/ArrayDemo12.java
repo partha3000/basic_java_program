@@ -1,4 +1,5 @@
 //Ex number 14 w3R
+// the common elements between two arrays
 
 
 package Convert_an_array.Array;
