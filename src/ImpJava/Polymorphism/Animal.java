@@ -8,6 +8,9 @@ public class Animal {
         System.out.println("The animal makes a sound");
     }
 
+    public void makeSound() {
+    }
+
     class Pig extends Animal {
         public void animalSound() {
             System.out.println("The pig says: wee wee");
