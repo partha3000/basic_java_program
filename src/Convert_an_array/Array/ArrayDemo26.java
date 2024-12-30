@@ -1,7 +1,8 @@
 /*
-Experiment Name : Write a Java program to find the number of even and odd integers in a given array of integers.
-Experiment number 28
+Experiment Name : Write a Java program to get the difference between the largest and smallest values in an array of integers. The array must have a length of at least 1.
+Experiment Number : 28
  */
+
 package Convert_an_array.Array;
 
 import java.util.Arrays;
@@ -15,17 +16,19 @@ public class ArrayDemo26 {
         // Print the original array.
         System.out.println("Original Array: " + Arrays.toString(array_nums));
 
-        // Initialize a counter variable for even numbers.
-        int ctr = 0;
+        // Initialize variables to store the maximum and minimum values.
+        int max_val = array_nums[0];
+        int min = array_nums[0];
 
-        // Use a loop to iterate through the array elements and count even numbers.
-        for (int i = 0; i < array_nums.length; i++) {
-            if (array_nums[i] % 2 == 0)
-                ctr++;
+        // Use a loop to find the maximum and minimum values in the array.
+        for (int i = 1; i < array_nums.length; i++) {
+            if (array_nums[i] > max_val)
+                max_val = array_nums[i];
+            else if (array_nums[i] < min)
+                min = array_nums[i];
         }
 
-        // Print the number of even and odd numbers in the array.
-        System.out.println("Number of even numbers : " + ctr);
-        System.out.println("Number of odd numbers  : " + (array_nums.length - ctr));
+        // Calculate and print the difference between the largest and smallest values.
+        System.out.println("Difference between the largest and smallest values of the said array: " + (max_val - min));
     }
 }

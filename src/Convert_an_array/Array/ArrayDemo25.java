@@ -1,13 +1,12 @@
 /*
-Experiment Name : Write a Java program to find the number of even and odd integers in a given array of integers.
-Experiment Number : 27
+Experiment Name : Write a Java program to .find the number of even and odd integers in a given array of integers
+Experiment number 28
  */
-
 package Convert_an_array.Array;
 
 import java.util.Arrays;
 
-public class ArrayDemo25{
+public class ArrayDemo25 {
     // The main method for executing the program.
     public static void main(String[] args) {
         // Declare and initialize an array of integers.
