@@ -1,3 +1,7 @@
+/*
+Experiment Name : Write a Java program to check if an array of integers contains two specified elements 65 and 77.
+Experiment number : 32
+ */
 package Convert_an_array.Array;
 
 import java.util.Arrays;
