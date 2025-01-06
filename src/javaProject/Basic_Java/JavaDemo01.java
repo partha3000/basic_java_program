@@ -22,5 +22,4 @@ public class JavaDemo01 {
         // Print the calculated area using placeholders for values
         System.out.printf("Area is %.1f * %.1f = %.2f \n", width, height, area);
     }
-
 }

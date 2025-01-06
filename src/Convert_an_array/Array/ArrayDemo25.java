@@ -19,8 +19,8 @@ public class ArrayDemo25 {
         int ctr = 0;
 
         // Use a loop to iterate through the array elements and count even numbers.
-        for (int i = 0; i < array_nums.length; i++) {
-            if (array_nums[i] % 2 == 0)
+        for (int arrayNum : array_nums) {
+            if (arrayNum % 2 == 0)
                 ctr++;
         }
 
