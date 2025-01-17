@@ -1,6 +1,6 @@
 /*
 Experiment number : 23
-Experiment Name :
+Experiment Name :Write a Java program to convert a binary number to a hexadecimal number.
  */
 package javaProject.Basic_Java;
 
