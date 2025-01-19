@@ -1,6 +1,6 @@
 /*
 Experiment Number : 25
-Experiment Name : Write a Java program to convert a octal number to a decimal number.
+Experiment Name : Write a Java program to convert an octal number to a decimal number.
  */
 package javaProject.Basic_Java;
 
