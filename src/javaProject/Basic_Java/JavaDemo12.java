@@ -1,6 +1,6 @@
 /*
 Experiment Number : 27
-Experiment Name : Write a Java program to convert a octal number to a hexadecimal number.
+Experiment Name : Write a Java program to convert an octal number to a hexadecimal number.
  */
 package javaProject.Basic_Java;
 
