@@ -1,6 +1,6 @@
 /*
 Experiment Number :26
-Experiment Name :Write a Java program to convert a octal number to a binary number.
+Experiment Name :Write a Java program to convert an octal number to a binary number.
  */
 package javaProject.Basic_Java;
 
@@ -12,7 +12,7 @@ public class JavaDemo11 {
         Scanner scanner = new Scanner(System.in);
 
         // Define an array to map octal digits to their binary equivalents
-        int[] octal_numvalues = {0, 1, 10, 11, 100, 101, 110, 111};
+        int[] octal_num_values = {0, 1, 10, 11, 100, 101, 110, 111};
 
         // Declare variables to store octal, temporary octal, and binary numbers, and a place value
         long octal_num, tempoctal_num, binary_num, place;
@@ -28,7 +28,7 @@ public class JavaDemo11 {
         // Convert the octal number to binary using the mapping array
         while (tempoctal_num != 0) {
             rem = (int)(tempoctal_num % 10);
-            binary_num = octal_numvalues[rem] * place + binary_num;
+            binary_num = octal_num_values[rem] * place + binary_num;
             tempoctal_num /= 10;
             place *= 1000;
         }
