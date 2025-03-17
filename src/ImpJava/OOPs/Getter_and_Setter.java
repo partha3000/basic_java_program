@@ -22,7 +22,7 @@ public class Getter_and_Setter {
         private String name;
         private int age;
 
-        // Constructor
+        // Constructor 
         public Person(String name, int age) {
             this.name = name;
             this.age = age;
