@@ -1,6 +1,7 @@
 package Convert_an_array.StackJava;
 
 public class Stack02 {
+
     private int[] arr;
     private int top;
 
