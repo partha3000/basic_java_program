@@ -5,7 +5,7 @@ public class Stack03 {
     private int top;
 
     // Constructor to initialize the stack
-    public Stack(int size) {
+    public void Stack(int size) {
         arr = new int[size];
         top = -1;
     }
@@ -79,24 +79,6 @@ public class Stack03 {
 
     public static void main(String[] args) {
         System.out.println("Initialize a stack:");
-        Stack stack = new Stack(10);
-        System.out.println("\nInput some elements on the stack:");
-        stack.push(1);
-        stack.push(3);
-        stack.push(2);
-        stack.push(0);
-        stack.push(7);
-        stack.push(5);
-        stack.display();
-        System.out.println("\nReverse the elements of the said stack:");
-        stack.reverse();
-        stack.display();
-        System.out.println("\nInput two more elements on the stack:");
-        stack.push(9);
-        stack.push(10);
-        stack.display();
-        System.out.println("\nReverse the elements of the said stack:");
-        stack.reverse();
-        stack.display();
+
     }
 }
