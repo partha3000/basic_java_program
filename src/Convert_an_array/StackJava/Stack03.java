@@ -1,30 +1,40 @@
 package Convert_an_array.StackJava;
 
+import java.util.Scanner;
 import java.util.Stack;
 
 public class Stack03 {
-    public static void main(String[] args) {
-        // Creating a 2D boolean array with initial values
-        boolean[][] array = {{true, false, true},
-                {false, true, false}};
-
-        // Finding the number of rows in the array
-        int rows_length = array.length;
-
-        // Finding the number of columns in the array by considering the length of the first row
-        int columns_length = array[0].length;
-
-        // Looping through each element of the 2D array
-        for (int i = 0; i < rows_length; i++) {
-            for (int j = 0; j < columns_length; j++) {
-                // Checking if the current element is true or false and printing accordingly
-                if (array[i][j]) {
-                    System.out.print(" t "); // Printing " t " if true
-                } else {
-                    System.out.print(" f "); // Printing " f " if false
-                }
-            }
-            System.out.println(); // Moving to the next line after printing each row
+    // Method to reverse the words in a given string
+    public static String reverse_str_word(String input_sentence) {
+        // Checking if the input string is null
+        if (input_sentence == null) {
+            throw new IllegalArgumentException("Input param can't be null."); // Throwing an exception for null input
         }
+
+        StringBuilder stringBuilder = new StringBuilder(); // Creating a StringBuilder to store the reversed string
+        String[] words = input_sentence.split(" "); // Splitting the input sentence into words based on spaces
+
+        // Loop to append words in reverse order to the StringBuilder
+        for (int i = words.length - 1; i >= 0; i--) {
+            stringBuilder.append(words[i]); // Appending each word in reverse order
+
+            if (i != 0) {
+                stringBuilder.append(" "); // Adding space between words except for the last word
+            }
+        }
+
+        return stringBuilder.toString(); // Returning the reversed string of words
+    }
+
+    // The main method of the program
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); // Creating a Scanner object to read input from the user
+
+        // Asking the user to input a string
+        System.out.print("Input a string: ");
+        String input = scanner.nextLine(); // Reading the input string from the user
+
+        // Displaying the result by reversing the words in the input string
+        System.out.println("\nResult: " + reverse_str_word(input));
     }
 }
