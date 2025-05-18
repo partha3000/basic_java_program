@@ -1,46 +1,27 @@
 package Convert_an_array.StackJava;
 
+import java.util.Arrays;
+
 public class Stack03 {
     public static void main(String[] args) {
-        // Initializing a 2D array with values
-        int[][] twodm = {
-                {10, 20, 30},
-                {40, 50, 60}
-        };
+        // Initializing an array of integers
+        Integer arr[] = new Integer[]{1, 4, 17, 7, 25, 3, 100};
+
+        int k = 3; // Initializing the value of 'k' as 3
 
         // Displaying the original array
-        System.out.print("Original Array:\n");
-        print_array(twodm);
+        System.out.println("Original Array: ");
+        System.out.println(Arrays.toString(arr));
 
-        // Performing transpose operation on the array
-        System.out.print("After changing the rows and columns of the said array:");
-        transpose(twodm);
-    }
+        // Displaying the k smallest elements of the array
+        System.out.println(k + " smallest elements of the said array are:");
 
-    // Method to transpose the given 2D array
-    private static void transpose(int[][] twodm) {
-        // Creating a new 2D array to store the transposed elements
-        int[][] newtwodm = new int[twodm[0].length][twodm.length];
+        // Sorting the array in ascending order
+        Arrays.sort(arr);
 
-        // Transposing the elements of the array
-        for (int i = 0; i < twodm.length; i++) {
-            for (int j = 0; j < twodm[0].length; j++) {
-                newtwodm[j][i] = twodm[i][j];
-            }
-        }
-
-        // Printing the transposed array
-        print_array(newtwodm);
-    }
-
-    // Method to print the elements of a 2D array
-    private static void print_array(int[][] twodm) {
-        // Looping through the array and printing its elements
-        for (int[] ints : twodm) {
-            for (int j = 0; j < twodm[0].length; j++) {
-                System.out.print(ints[j] + " ");
-            }
-            System.out.println();
+        // Printing the k smallest elements from the sorted array
+        for (int i = 0; i < k; i++) {
+            System.out.print(arr[i] + " ");
         }
     }
 }
