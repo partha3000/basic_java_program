@@ -1,40 +1,46 @@
 package Convert_an_array.StackJava;
 
-import java.util.Scanner;
-import java.util.Stack;
-
 public class Stack03 {
-    // Method to reverse the words in a given string
-    public static String reverse_str_word(String input_sentence) {
-        // Checking if the input string is null
-        if (input_sentence == null) {
-            throw new IllegalArgumentException("Input param can't be null."); // Throwing an exception for null input
-        }
+    public static void main(String[] args) {
+        // Initializing a 2D array with values
+        int[][] twodm = {
+                {10, 20, 30},
+                {40, 50, 60}
+        };
 
-        StringBuilder stringBuilder = new StringBuilder(); // Creating a StringBuilder to store the reversed string
-        String[] words = input_sentence.split(" "); // Splitting the input sentence into words based on spaces
+        // Displaying the original array
+        System.out.print("Original Array:\n");
+        print_array(twodm);
 
-        // Loop to append words in reverse order to the StringBuilder
-        for (int i = words.length - 1; i >= 0; i--) {
-            stringBuilder.append(words[i]); // Appending each word in reverse order
+        // Performing transpose operation on the array
+        System.out.print("After changing the rows and columns of the said array:");
+        transpose(twodm);
+    }
 
-            if (i != 0) {
-                stringBuilder.append(" "); // Adding space between words except for the last word
+    // Method to transpose the given 2D array
+    private static void transpose(int[][] twodm) {
+        // Creating a new 2D array to store the transposed elements
+        int[][] newtwodm = new int[twodm[0].length][twodm.length];
+
+        // Transposing the elements of the array
+        for (int i = 0; i < twodm.length; i++) {
+            for (int j = 0; j < twodm[0].length; j++) {
+                newtwodm[j][i] = twodm[i][j];
             }
         }
 
-        return stringBuilder.toString(); // Returning the reversed string of words
+        // Printing the transposed array
+        print_array(newtwodm);
     }
 
-    // The main method of the program
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // Creating a Scanner object to read input from the user
-
-        // Asking the user to input a string
-        System.out.print("Input a string: ");
-        String input = scanner.nextLine(); // Reading the input string from the user
-
-        // Displaying the result by reversing the words in the input string
-        System.out.println("\nResult: " + reverse_str_word(input));
+    // Method to print the elements of a 2D array
+    private static void print_array(int[][] twodm) {
+        // Looping through the array and printing its elements
+        for (int[] ints : twodm) {
+            for (int j = 0; j < twodm[0].length; j++) {
+                System.out.print(ints[j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
