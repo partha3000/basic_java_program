@@ -4,24 +4,24 @@ import java.util.Arrays;
 
 public class Stack03 {
     public static void main(String[] args) {
-        // Initializing an array of integers
-        Integer arr[] = new Integer[]{1, 4, 17, 7, 25, 3, 100};
+        // Initializing an integer variable 'n' with the value 2350
+        int n = 2350;
 
-        int k = 3; // Initializing the value of 'k' as 3
+        // Displaying the original number
+        System.out.printf("Original Number: %d\n", n);
 
-        // Displaying the original array
-        System.out.println("Original Array: ");
-        System.out.println(Arrays.toString(arr));
+        // Initializing a variable to count the number of right shifts
+        int shift_right_count = 0;
 
-        // Displaying the k smallest elements of the array
-        System.out.println(k + " smallest elements of the said array are:");
+        // Performing right shift operations until 'n' becomes zero
+        do {
+            n >>= 1; // Right shifting 'n' by 1 bit
+            shift_right_count++; // Incrementing the shift count
+        } while (n != 0); // Loop continues until 'n' becomes zero
 
-        // Sorting the array in ascending order
-        Arrays.sort(arr);
+        shift_right_count--; // Decrementing the shift count by 1 to correct the count
 
-        // Printing the k smallest elements from the sorted array
-        for (int i = 0; i < k; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        // Displaying the final result (shift count)
+        System.out.printf("Result: %s\r\n", shift_right_count);
     }
 }
