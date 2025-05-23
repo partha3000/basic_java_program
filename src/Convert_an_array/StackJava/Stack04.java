@@ -1,4 +1,8 @@
+//Java: Reverse the elements of a stack
+
 package Convert_an_array.StackJava;
+
+import java.util.Stack;
 
 public class Stack04 {
     private int[] arr;
@@ -47,10 +51,24 @@ public class Stack04 {
         return top == -1;
     }
 
-    public void removeAll() {
-        top = -1;
-    }
+    public void reverse() {
+        if (top == -1) {
+            System.out.println("Stack is empty");
+            return;
+        }
 
+        int[] reversedArray = new int[arr.length];
+        int index = 0;
+
+        while (!isEmpty()) {
+            int temp = pop();
+            reversedArray[index++] = temp;
+        }
+
+        for (int i = 0; i < index; i++) {
+            push(reversedArray[i]);
+        }
+    }
     public void display() {
         if (top == -1) {
             System.out.println("Stack is empty");
@@ -73,10 +91,17 @@ public class Stack04 {
         stack.push(0);
         stack.push(7);
         stack.push(5);
-        stack.push(-1);
         stack.display();
-        System.out.println("\nRemove all the elements from the stack:");
-        stack.removeAll();
-        System.out.println("Is the stack empty? " + stack.isEmpty());
+        System.out.println("\nReverse the elements of the said stack:");
+        stack.reverse();
+        stack.display();
+        System.out.println("\nInput two more elements on the stack:");
+        stack.push(9);
+        stack.push(10);
+        stack.display();
+        System.out.println("\nReverse the elements of the said stack:");
+        stack.reverse();
+        stack.display();
     }
+
 }
