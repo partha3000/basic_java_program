@@ -10,16 +10,16 @@ public class switchProgram {
         int button = scanner.nextInt();
 
         switch (button){
-            case 1:
-                System.out.println("Button 1");
-            case 2:
-                System.out.println("button 2");
-            case 3:
-                System.out.println("Button 3");
-            case 4:
-                System.out.println("Button 4");
-            default:
-                System.out.println("Invalid Button Press");
+            case 1: System.out.println("Button 1");
+            break;
+            case 2: System.out.println("button 2");
+            break;
+            case 3: System.out.println("Button 3");
+            break;
+            case 4: System.out.println("Button 4");
+            break;
+            default: System.out.println("Invalid Button Press");
+            break;
         }
 
 
